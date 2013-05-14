@@ -1,0 +1,58 @@
+        /*if (incRot) {
+            float psi = this->getTotRot().x * M_PI / 180.0f;
+            float theta = this->getTotRot().y * M_PI / 180.0f;
+            float phi = this->getTotRot().z * M_PI / 180.0f;
+            glm::vec3 oldtrans = pos + this->trans;
+            //TODO: gotta fix stuff here
+            //USE ROTATION MATRIX HERE SOMEHAO
+            glm::mat3 rotMat = glm::mat3(cos(theta) * cos(phi), cos(theta) * sin(phi), -sin(theta),
+                    sin(psi) * sin(theta) * cos(phi) - cos(psi) * sin(phi), cos(psi) * cos(phi) + sin(psi) * sin(theta) * sin(phi), sin(psi) * cos(theta),
+                    sin(psi) * sin(phi) + cos(psi) * sin(theta) * cos(phi), cos(psi) * sin(theta) * sin(phi) - sin(psi) * cos(phi), cos(psi) * cos(theta)
+                    );
+            glm::vec3 newTrans = rotMat * oldtrans;
+            cout << "POOOP" << endl;
+            cout << newTrans.x << endl;
+            cout << newTrans.y << endl;
+            cout << newTrans.z << endl;
+            cout << "KAZZOOO" << endl;
+            cout << this->getTotRot().x << endl;
+            cout << this->getTotRot().y << endl;
+            cout << this->getTotRot().z << endl;
+            pos = newTrans;
+        } else {
+            pos += this->trans;
+        }*/
+        /*glm::mat4 modelMat = glm::mat4(this->mat[0], this->mat[1], this->mat[2], this->mat[3], 
+                                        this->mat[4], this->mat[5], this->mat[6], this->mat[7],
+                                        this->mat[8], this->mat[9], this->mat[10], this->mat[11],
+                                        this->mat[12], this->mat[13], this->mat[14], this->mat[15]);
+        glm::vec3 oldPos = pos + this->trans;
+        glm::vec4 newPost = glm::vec4(oldPos, 1.0);
+        glm::vec4 newPos = glm::normalize(glm::transpose(modelMat) * newPost);
+        cout << "PWEWWP" << endl;
+        cout << newPos.x << endl;
+        cout << newPos.y << endl;
+        cout << newPos.z << endl;
+        pos = glm::vec3(newPos.x, newPos.y, newPos.z);*/
+
+//CHANGE X HERE
+    /*while (true) {
+        temp->parent->rot = temp->parent->rot + glm::vec3(0.1, 0, 0);
+        tempError = computeError(temp, reachObj);
+        if (tempError >= newError) {
+            temp->parent->rot = temp->parent->rot - glm::vec3(0.1, 0, 0);
+            break;
+        } else {
+            newError = tempError;
+        }
+    }
+    while (true) {
+        temp->parent->rot = temp->parent->rot - glm::vec3(0.1, 0, 0);
+        tempError = computeError(temp, reachObj);
+        if (tempError >= newError) {
+            temp->parent->rot = temp->parent->rot + glm::vec3(0.1, 0, 0);
+            break;
+        } else {
+            newError = tempError;
+        }
+    }*/
